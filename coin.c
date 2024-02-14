@@ -9,6 +9,10 @@ int coins(int amount,int coin)
 
 int main()
 {
+
+
+
+  
    int amount,coin;
    
     printf("enter the amount:");
