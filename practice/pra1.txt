@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+  int i,n,num;
+  
+  printf("enter a number");
+  scanf("%d,&n");
+  
+  for(i=1;i<=n;i++)
+  {
+     if(n=1)
+	 {
+	  num=100;
+	 }
+	 else
+	 {
+	  num=i*i;
+	 }
+	 printf("%d",i*i);
+  }
+
+}
