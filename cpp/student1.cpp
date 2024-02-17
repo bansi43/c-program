@@ -1,37 +1,49 @@
 #include<iostream>
 using namespace std;
 
-class stud;
+class stud
 {
     private:
-    int admin1;
-    char studentname;
+    int admno;
+    char sname[10];
     float eng,math,sci;
-    float total;
-
-    total=eng+math+sci;
-    public:
-    int admin2;
-    char studentname;
-    float eng,math,sci;
-    float total;
-
-    void setdata(int admin1,char studentname, float eng,float math,float sci,float total);
-    void print data()
+     float ctotal;
     {
-    cout<<"enter the admin";
-    cin>>admin1
-     cout<<"enter the student";
-    cin>>studentname
-     cout<<"enter the math";
-    cin>>eng
-     cout<<"enter the student";
-    cin>>math
-     cout<<"enter the student";
-    cin>>sci
-     cout<<"enter the total";
-    cin>>total
+       
+        ctotal=eng+math+sci;
+        return ctotal;
     }
-    
+
+   
+    public:
+    void takedata();
+    void showdata();
+
+   
+    };
+void stud::takedata()
+{
+  cout<<"enter the admno:";
+  cin>>admno;
+  cout<<"enter the sname:";
+  cin>>sname;
+   cout<<"enter the ctotal:";
+  cin>>ctotal;
+} 
+void stud::showdata()
+{
+   cout<<"enter the admno:"<<admno<<endl;
+
+  cout<<"enter the sname:"<<sname<<endl;
+
+   cout<<"enter the ctotal:"<<ctotal<<endl;
 
 }
+int main()
+{
+    stud s;
+    s.takedata();
+    s.showdata();
+  
+}
+
