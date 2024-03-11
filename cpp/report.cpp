@@ -9,8 +9,9 @@ class report
     char name[20];
     float marks[5];
     float avg,total,per;
-    void getvag();
+    int getvag();
     {
+      
         if(i=0;i<5;i++)
         {
             total=marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5];

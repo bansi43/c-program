@@ -1,0 +1,1 @@
+ int gst=price*18/100;
